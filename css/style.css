@@ -1,5 +1,6 @@
 /* --------- COLORS ---------- */
 /* Purple    - rgb(133,36,204) */
+/* Brighter Purple - #AD00E8   */
 /* Gray      - rgb(36,42,53)   */
 /* Dark Gray - rgb(24,26,34)   */
 
@@ -48,6 +49,12 @@ h3 {
 /* -------------------------------------- */
 /* REUSABLE COMPONENTS */
 /* -------------------------------------- */
+.group:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 .row {
     margin: 0 auto;
     padding: 0 40px;
@@ -77,6 +84,89 @@ header {
     background-color: rgb(133,36,204);
 }
 
+.top-bar {
+    padding: 30px 45px;
+}
+
+.top-bar .logo {
+    float: left;
+    font-size: 130%;
+    font-weight: 700;
+}
+
+.top-bar nav {
+    float: left;
+    margin-left: 100px;
+}
+
+.main-nav {
+    float: left;
+    list-style: none;
+    margin-top: 1px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-right: 80px;
+    vertical-align: middle;
+}
+
+.main-nav li a {
+    font-size: 80%;
+    font-weight: 500;
+    vertical-align: middle;
+}
+
+.main-nav li a > i {
+    font-size: 60%;
+    margin-left: 10px;
+    transform: translateY(-1px);
+}
+
+.page-options {
+    float: right;
+    margin-top: 2px;
+}
+
+.page-options a {
+    font-size: 70%;
+    font-weight: 400;
+    vertical-align: middle;
+}
+
+.page-options a i {
+    vertical-align: middle;
+}
+
+.page-options .docs-link {
+    color: #000;
+    padding: 9px 13px;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: opacity 0.2s;
+}
+
+.page-options .docs-link:hover {
+    opacity: 0.7;
+}
+
+.page-options .docs-link i{
+    font-size: 130%;
+    margin-right: 8px;
+    margin-bottom: 2px;
+}
+
+.page-options .theme-link i {
+    font-size: 150%;
+    margin-left: 20px;
+    opacity: 0.5;
+    transition: opacity 0.2s;
+}
+
+.page-options .theme-link i:hover {
+    opacity: 1;
+}
+
 header h1 {
     margin: 0 auto;
     padding-top: 300px;
@@ -87,7 +177,7 @@ header h1 {
 /* FEATURES */
 /* -------------------------------------- */
 .feature-boxes {
-    margin-top: 80px;
+    margin-top: 40px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 50px;
@@ -108,7 +198,13 @@ header h1 {
     background-color: rgb(24,26,34);
 }
 
-.feature-box svg {
+/* .feature-box svg {
+    width: 64px;
+    height: 64px;
+    margin: 30px auto;
+} */
+
+.feature-box img {
     width: 64px;
     height: 64px;
     margin: 30px auto;
@@ -121,4 +217,17 @@ header h1 {
     line-height: 160%;
     margin: 0 auto;
     margin-bottom: 20px;
+}
+
+.feature-box > p.call-to-action {
+    display: inline-block;
+    font-size: 90%;
+    font-weight: 700;
+    color: #AD00E8;
+    border-bottom: 2px solid #AD00E8;
+}
+
+.feature-box > i.fas {
+    font-size: 70%;
+    color: #AD00E8;
 }
