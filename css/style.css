@@ -6,6 +6,7 @@
 
 /* ----- FONTS ----- */
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
 
 /* -------------------------------------- */
 /* BASIC SETUP */
@@ -118,7 +119,7 @@ h3 {
 /* HEADER */
 /* -------------------------------------- */
 header {
-    min-height: 800px;
+    /* min-height: 800px; */
     background-color: rgb(133,36,204);
 }
 
@@ -128,8 +129,10 @@ header {
 
 .top-bar .logo {
     float: left;
-    font-size: 130%;
+    font-size: 120%;
     font-weight: 700;
+    letter-spacing: 0.8px;
+    font-family: 'Poppins', 'Karla', sans-serif;
 }
 
 .top-bar nav {
@@ -139,7 +142,7 @@ header {
 
 .main-nav {
     float: left;
-    margin-top: 2px;
+    margin-top: 3px;
 }
 
 .main-nav li {
@@ -162,7 +165,7 @@ header {
 
 .page-options {
     float: right;
-    margin-top: 2px;
+    margin-top: 5px;
 }
 
 .page-options a {
@@ -206,8 +209,10 @@ header {
 
 header h1 {
     margin: 0 auto;
-    padding-top: 300px;
     max-width: 900px;
+    padding: 210px 20px 300px;
+    line-height: 125%;
+    font-family: 'Poppins', 'Karla', sans-serif;
 }
 
 /* -------------------------------------- */
@@ -313,11 +318,6 @@ header h1 {
     font-size: 70%;
 }
 
-/* .section-faq > i.fas {
-    font-size: 70%;
-    color: #AD00E8;
-} */
-
 .section-faq h2 {
     max-width: 780px;
 }
@@ -339,4 +339,11 @@ header h1 {
     font-size: 60%;
     margin-left: 3px;
     vertical-align: middle;
+}
+
+/* -------------------------------------- */
+/* MORE FEATURES */
+/* -------------------------------------- */
+.section-features .wide-copy {
+    max-width: 1000px;
 }
